@@ -11,6 +11,7 @@ def solution(p: float, x: np.array) -> tuple:
     # Измените код этой функции
     # Это будет вашим решением
     # Не меняйте название функции и её аргументы
+    mu, sigma = 0, 0.25
     alpha = p
     s = sum(x)/len(x)
     se = sigma/math.sqrt(len(x))
