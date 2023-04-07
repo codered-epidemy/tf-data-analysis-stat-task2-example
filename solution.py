@@ -15,5 +15,5 @@ def solution(p: float, x: np.array) -> tuple:
     alpha = p
     s = sum(x)/len(x)
     se = sigma/math.sqrt(len(x))
-    low_bound, up_bound = scipy.stats.norm.interval(alpha, loc=s, scale=se)
+    low_bound, up_bound = norm.interval(alpha, loc=s, scale=se)
     return low_bound, up_bound
